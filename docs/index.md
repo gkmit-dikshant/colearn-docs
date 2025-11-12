@@ -8,11 +8,11 @@
 - This platform targets **developers**, **researchers**, **volunteers**, and **creative professionals** looking to join collaborative projects. 
 - This platform allow users to create projects and build teams around shared goals.
 - The platform should facilitate seamless flow from project discovery to collaboration, ensuring users can join project teams once they are accepted.
-- The project should include features for **communication**, **project management** and **resource sharing** among team members.
+- The project include features for **communication**, **project management** and **resource sharing** among team members.
 
 # Features
 ### In Current Phase
-- **Authentication**: A secure login/signup system using Google accounts and role based access control.
+- **Authentication**: A secure login/signup system and role based access control.
 - **Project Creation**: Users can create projects by providing necessary details such as title, description, required skills, and location tags.
 - **Project Discovery**: Users can search for projects based on filters like skills, title, and location tags, and view detailed project information.
 - **Project Joining**: Users can apply to join projects, and project owners can review applications and accept or reject applicants.

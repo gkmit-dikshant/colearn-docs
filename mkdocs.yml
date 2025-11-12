@@ -7,6 +7,7 @@ nav:
   - Requirements: requirements.md
   - Data Flow Diagram: dfd.md
   - Entity Relationship Diagram: erd.md
-  - Tech Stack: tech_stack.md
+  - Technologies: tech_stack.md
+  - Deployment Architecture: architecture.md
 theme: material
 # mkdocs serve --dev-addr=0.0.0.0:80

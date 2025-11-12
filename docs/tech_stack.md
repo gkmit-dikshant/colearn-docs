@@ -1,4 +1,18 @@
 # Tech Stack
+
+| Technology | Version | Purpose                     |
+|------------|---------|-----------------------------|
+| React      | 19.1.0  | Frontend framework          |
+| Node.js    | 24 LTS  | Backend runtime             |
+| Express.js | 5.0.0   | Backend framework           |
+| RDS        |         | Database management system  |
+| Sequelize  | 6.37.7  | ORM for database interaction|
+| Redis      | 7.1.4   | Caching                     |
+| Docker     | 24.0.5  | Containerization            |
+| SuperTest  | 7.1.4   | API testing                 |
+| Jest       | 30.2.0  | Unit testing                |
+
+
 ### Frontend
   - **React**: A JavaScript library for building user interfaces, allowing us to create dynamic and responsive web applications.
 

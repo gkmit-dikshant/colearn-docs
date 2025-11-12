@@ -3,4 +3,6 @@ The Data Flow Diagram (DFD) for the Colearn platform illustrates the flow of inf
 
 ![dfd](./images/dfd.png)
 
-ß
+## Authentication and Authorization Flow
+
+![auth-flow](./images/authentication_flow.png)
