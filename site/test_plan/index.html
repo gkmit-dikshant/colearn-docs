@@ -640,6 +640,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="2.5 Delete Project">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#project-crud-passes-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project CRUD passes if:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -885,6 +902,23 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="2.5 Delete Project">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#project-crud-passes-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project CRUD passes if:
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
         
       </ul>
@@ -1033,15 +1067,17 @@
 <li>Valid email</li>
 <li>Password meeting required length</li>
 <li>OTP verification</li>
-<li>System must validate missing or invalid fields.</li>
+</ul>
+</li>
+<li>
+<p>System must validate missing or invalid fields.</p>
+</li>
 <li>Duplicate email registration must be rejected.</li>
 <li>Password must be hashed securely in the database.</li>
 <li>
-<p>Successful signup must return:</p>
-</li>
-<li>
-<p>201 status</p>
-</li>
+<p>Successful signup must return:     </p>
+<ul>
+<li>201 status</li>
 <li>User data (excluding password)</li>
 <li>Auth token</li>
 </ul>
@@ -1057,12 +1093,12 @@
 <li>Correct password</li>
 <li>Wrong password: 401 Unauthorized  </li>
 <li>Non-existing email: 404 User Not Found  </li>
+</ul>
+</li>
 <li>
 <p>On successful login:</p>
-</li>
-<li>
-<p>JWT token must be returned</p>
-</li>
+<ul>
+<li>JWT token must be returned</li>
 <li>User details must be returned</li>
 <li>Token must allow accessing protected routes</li>
 </ul>
@@ -1097,12 +1133,12 @@
 <li>required skills</li>
 <li>location</li>
 <li>Missing fields: 400 Bad Request</li>
+</ul>
+</li>
 <li>
 <p>Successful creation must return:</p>
-</li>
-<li>
-<p>201 status</p>
-</li>
+<ul>
+<li>201 status</li>
 <li>Full project object</li>
 </ul>
 </li>
@@ -1117,7 +1153,6 @@
 <li>Skill</li>
 <li>Title</li>
 <li>Location</li>
-<li>No matching results must return an empty array.</li>
 </ul>
 </li>
 </ul>
@@ -1143,20 +1178,19 @@
 <p>Deleting must also remove:   </p>
 <ul>
 <li>Pending applications</li>
-<li>Member relations (if any)</li>
-<li>
-<p>Successful delete: 200 or 204 status
-Project CRUD passes if:</p>
-</li>
-<li>
-<p>Owners can manage their projects  </p>
-</li>
-<li>Non-owners cannot modify or delete  </li>
-<li>Filters and search work correctly  </li>
-<li>Validation errors are meaningful  </li>
+<li>Member relations</li>
 </ul>
 </li>
+<li>
+<p>Successful delete: 204 status</p>
+</li>
 </ul>
+<h4 id="project-crud-passes-if">Project CRUD passes if:</h4>
+<pre><code>- Owners can manage their projects  
+- Non-owners cannot modify or delete  
+- Filters and search work correctly  
+- Validation errors are meaningful
+</code></pre>
 <hr />
 <h2 id="3-project-joining-and-approval-workflow-acceptance-criteria">3. Project Joining and Approval Workflow — Acceptance Criteria</h2>
 <h3 id="31-apply-to-project">3.1 Apply to Project</h3>

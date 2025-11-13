@@ -20,10 +20,11 @@ This document outlines the test plan for the Colearn project, detailing the acce
     - Valid email
     - Password meeting required length
     - OTP verification
+
 - System must validate missing or invalid fields.
 - Duplicate email registration must be rejected.
 - Password must be hashed securely in the database.
-- Successful signup must return:
+- Successful signup must return:     
 
     - 201 status
     - User data (excluding password)
@@ -38,6 +39,7 @@ This document outlines the test plan for the Colearn project, detailing the acce
     - Correct password
 - Wrong password: 401 Unauthorized  
 - Non-existing email: 404 User Not Found  
+
 - On successful login:
 
     - JWT token must be returned
@@ -70,6 +72,7 @@ This document outlines the test plan for the Colearn project, detailing the acce
     - required skills
     - location
 - Missing fields: 400 Bad Request
+
 - Successful creation must return:
 
     - 201 status
@@ -84,7 +87,7 @@ This document outlines the test plan for the Colearn project, detailing the acce
     - Skill
     - Title
     - Location
-- No matching results must return an empty array.
+
 
 ---
 
@@ -107,9 +110,11 @@ This document outlines the test plan for the Colearn project, detailing the acce
 - Deleting must also remove:   
 
     - Pending applications
-    - Member relations (if any)
-- Successful delete: 200 or 204 status
-Project CRUD passes if:
+    - Member relations
+
+- Successful delete: 204 status
+
+#### Project CRUD passes if:
 
     - Owners can manage their projects  
     - Non-owners cannot modify or delete  
