@@ -15,30 +15,34 @@ This document outlines the test plan for the Colearn project, detailing the acce
 
 ### 1.1 Signup
 - User must be able to sign up using Google OAuth or email/password.
-- #### User must be able to create an account with:
-  - Valid email
-  - Password meeting required length
-  - OTP verification
+- User must be able to create an account with:
+
+    - Valid email
+    - Password meeting required length
+    - OTP verification
 - System must validate missing or invalid fields.
 - Duplicate email registration must be rejected.
 - Password must be hashed securely in the database.
 - Successful signup must return:
-  - 201 status
-  - User data (excluding password)
-  - Auth token
+
+    - 201 status
+    - User data (excluding password)
+    - Auth token
 
 ---
 
 ### 1.2 Login
-- #### User must be able to log in using:
-  - Valid email
-  - Correct password
+- User must be able to log in using:
+
+    - Valid email
+    - Correct password
 - Wrong password: 401 Unauthorized  
 - Non-existing email: 404 User Not Found  
-- #### On successful login:
-  - JWT token must be returned
-  - User details must be returned
-  - Token must allow accessing protected routes
+- On successful login:
+
+    - JWT token must be returned
+    - User details must be returned
+    - Token must allow accessing protected routes
 
 ---
 
@@ -46,12 +50,12 @@ This document outlines the test plan for the Colearn project, detailing the acce
 - Access without token: 401 Unauthorized  
 - Access with invalid or expired token: 403 Forbidden  
 - Access with valid token must succeed  
+- Authentication module passes if:
 
-#### Authentication module passes if:
-- Valid users can sign up and log in  
-- Invalid credentials are rejected  
-- JWT protects secure routes  
-- Passwords are never exposed  
+    - Valid users can sign up and log in  
+    - Invalid credentials are rejected  
+    - JWT protects secure routes  
+    - Passwords are never exposed  
 
 ---
 
@@ -59,24 +63,27 @@ This document outlines the test plan for the Colearn project, detailing the acce
 
 ### 2.1 Create Project
 - Only authenticated users can create projects.
-- #### Required fields:
-  - title
-  - description
-  - required skills
-  - location
+- Required fields:
+
+    - title
+    - description
+    - required skills
+    - location
 - Missing fields: 400 Bad Request
-- #### Successful creation must return:
-  - 201 status
-  - Full project object
+- Successful creation must return:
+
+    - 201 status
+    - Full project object
 
 ---
 
 ### 2.2 Read (Get Projects)
 - Any user can view project listings.
-- #### Must support filtering by:
-  - Skill
-  - Title
-  - Location
+- Must support filtering by:
+
+    - Skill
+    - Title
+    - Location
 - No matching results must return an empty array.
 
 ---
@@ -97,16 +104,17 @@ This document outlines the test plan for the Colearn project, detailing the acce
 
 ### 2.5 Delete Project
 - Only the owner can delete a project.
-- #### Deleting must also remove:   
-  - Pending applications
-  - Member relations (if any)
-- Successful delete: 200 or 204 status
+- Deleting must also remove:   
 
-#### Project CRUD passes if:
-- Owners can manage their projects  
-- Non-owners cannot modify or delete  
-- Filters and search work correctly  
-- Validation errors are meaningful  
+    - Pending applications
+    - Member relations (if any)
+- Successful delete: 200 or 204 status
+Project CRUD passes if:
+
+    - Owners can manage their projects  
+    - Non-owners cannot modify or delete  
+    - Filters and search work correctly  
+    - Validation errors are meaningful  
 
 ---
 
@@ -116,9 +124,10 @@ This document outlines the test plan for the Colearn project, detailing the acce
 - Only authenticated users can apply.
 - User cannot apply to their own project.
 - User cannot apply more than once.
-- #### Successful application must:
-  - Store application status as "approved"
-  - Notify the user of successful application.
+- Successful application must:
+
+    - Store application status as "approved"
+    - Notify the user of successful application.
 
 
 ---
@@ -131,10 +140,11 @@ This document outlines the test plan for the Colearn project, detailing the acce
 
 ### 3.3 Approve Application
 - Only owner can accept a pending application.
-- #### After approval:
-  - User becomes a project member
-  - Status updates to "accepted"
-  - Apply button must show Accepted
+- After approval:
+
+    - User becomes a project member
+    - Status updates to "accepted"
+    - Apply button must show Accepted
 
 ---
 
