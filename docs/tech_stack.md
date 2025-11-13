@@ -5,7 +5,7 @@
 | React      | 19.1.0  | Frontend framework          |
 | Node.js    | 24 LTS  | Backend runtime             |
 | Express.js | 5.0.0   | Backend framework           |
-| RDS        |         | Database management system  |
+| Postgres   | 17      | Database                     |
 | Sequelize  | 6.37.7  | ORM for database interaction|
 | Redis      | 7.1.4   | Caching                     |
 | Docker     | 24.0.5  | Containerization            |
@@ -21,6 +21,7 @@
   - **Express.js**: A minimal and flexible Node.js web application framework that provides a robust set of features for building APIs.
 
 ### Database
+  - **RDS**: Amazon Relational Database Service, a managed database service that simplifies the setup, operation, and scaling of relational databases in the cloud.
   - **PostgreSQL**: A powerful, open-source relational database system known for its reliability and feature set.
   - **Sequilzer**: An ORM (Object-Relational Mapping) tool that simplifies database access and management.
 
