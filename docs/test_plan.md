@@ -2,9 +2,6 @@
 
 This document outlines the test plan for the Colearn project, detailing the acceptance criteria for major modules.
 
----
-
-# Summary Table
 
 | Module | Description | 
 |--------|-------------|
