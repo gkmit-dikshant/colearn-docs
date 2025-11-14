@@ -116,10 +116,10 @@ This document outlines the test plan for the Colearn project, detailing the acce
 
 #### Project CRUD passes if:
 
-    - Owners can manage their projects  
-    - Non-owners cannot modify or delete  
-    - Filters and search work correctly  
-    - Validation errors are meaningful  
+- Owners can manage their projects  
+- Non-owners cannot modify or delete  
+- Filters and search work correctly  
+- Validation errors are meaningful  
 
 ---
 
