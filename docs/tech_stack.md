@@ -9,8 +9,8 @@
 | Sequelize  | 6.37.7  | ORM for database interaction|
 | Redis      | 7.1.4   | Caching                     |
 | Docker     | 24.0.5  | Containerization            |
-| SuperTest  | 7.1.4   | API testing                 |
-| Jest       | 30.2.0  | Unit testing                |
+| vitest  | 7.1.4   | for frontend testing                 |
+| Jest       | 30.2.0  | for backend testing               |
 
 
 ### Frontend
@@ -32,5 +32,5 @@
   - **Docker**: A platform for developing, shipping, and running applications in containers, ensuring consistency across different environments.
 
 ### Testing
-  - **SuperTest**: A library for testing Node.js HTTP servers, allowing for easy integration and end-to-end testing.
+  = - **vitest**: A unit test framework powered by Vite, designed for frontend testing.
   - **Jest**: A delightful JavaScript testing framework with a focus on simplicity and support for large web applications.
