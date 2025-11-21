@@ -14,7 +14,6 @@ This document outlines the test plan for the Colearn project, detailing the acce
 ## 1. User Authentication — Acceptance Criteria
 
 ### 1.1 Signup
-- User must be able to sign up using Google OAuth or email/password.
 - User must be able to create an account with:
 
     - Valid email

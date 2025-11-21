@@ -1,6 +1,6 @@
 # Technical Use Cases:
 
-## Login/Signup using google account.
+<!-- ## Login/Signup using google account.
 - **Actor**: User
 - **Precondition**: User is on the login/signup page.
 - **Postcondition**: User is logged in and redirected to the dashboard.
@@ -9,7 +9,7 @@
     2. System redirects to Google OAuth page.
     3. User enters Google credentials and grants permissions.
     4. System verifies credentials and logs in the user.
-    5. If the user is new, a new account is created in the system and an email with a default password is sent to the user's registered email.
+    5. If the user is new, a new account is created in the system and an email with a default password is sent to the user's registered email. -->
 
 ## Signup with Email/Password 
 - **Actor**: User
@@ -19,7 +19,7 @@
     1. User selects “Sign up with Email”.
     2. Fills form with name, email, and password.
     3. System validates inputs and checks existing email.
-    4. If new email, system generates 6-digit OTP.
+    4. If new email, system generates an OTP.
     5. OTP sent to user’s email.
     6. User enters OTP for verification.
     7. On success, account created and verified.
@@ -41,9 +41,7 @@
 - **Postcondition**: User views a list of projects matching the search criteria.
 - **Main Flow**:
     1. User navigates to "Discover Projects" page.
-    2. User enters search criteria (skills, title, location tags).
-    3. User submits the search form.
-    4. System retrieves and displays a list of matching projects.
+    2. System retrieves and displays a list of matching projects.
 ## Apply to join a project.
 - **Actor**: Registered User
 - **Precondition**: User is logged in and viewing a project detail page.
@@ -51,7 +49,7 @@
 - **Main Flow**:
     1. User navigates to a specific project detail page.
     2. User clicks on "Apply to Join" button.
-    3. User fills in application note explaining interest and relevant skills.
+    3. User fills in application note explaining interest.
     4. User submits the application.
     5. System notifies the project owner of the new application.
 ## Review applicants and accept/reject them.

@@ -8,7 +8,6 @@
 | Postgres   | 17      | Database                     |
 | Sequelize  | 6.37.7  | ORM for database interaction|
 | Redis      | 7.1.4   | Caching                     |
-| Docker     | 24.0.5  | Containerization            |
 | vitest  | 7.1.4   | for frontend testing                 |
 | Jest       | 30.2.0  | for backend testing               |
 
@@ -28,8 +27,6 @@
 ### Caching
   - **Redis**: An in-memory data structure store used as a database, cache, and message broker to enhance application performance.
 
-### DevOps
-  - **Docker**: A platform for developing, shipping, and running applications in containers, ensuring consistency across different environments.
 
 ### Testing
   = - **vitest**: A unit test framework powered by Vite, designed for frontend testing.

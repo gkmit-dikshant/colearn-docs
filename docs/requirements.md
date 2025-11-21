@@ -3,9 +3,9 @@ In this section, we outline the key functional requirements, non-functional requ
 ## Functional Requirements
 |ID | Requirement |  Description | Priority | Scope |
 |---- |----- |---------------|-----------| -------|
-| [F1](#f1-authentication) | Authentication | 1. User should be able to login/signup using Google. <br> 2. User should be able to login/signup using email and password. <br> 3. User should be able to reset password. | High | Current |
+| [F1](#f1-authentication) | Authentication | User should be able to login/signup using email and password.  | High | Current |
 |[F2](#f2-project-creation) |Project Creation| User should be able to create a project specifying the project description. | High | Current |
-|[F3](#f3-project-discovery) |Project Discovery| User should be able to search for project based on skills, title and location tag able to view project details and requirements.| High | Current |
+|[F3](#f3-project-discovery) |Project Discovery| User should be able to view project details.| High | Current |
 | [F4](#f4-project-joining) | Project Joining | User should be able to apply for a project. Project owner should be able to view applicants and accept/reject them. Accepted users should be able to join project team.| High | Current |
 | [F5](#f5-project-dashboard) | Project Dashboard | A Dedicated dashboard for accessing all the features. | High | Current |
 | [F6](#f6-team-communication) | Team Communication | Team members should be able to communicate via chat feature. | High | Future |
@@ -14,10 +14,7 @@ In this section, we outline the key functional requirements, non-functional requ
 | [F9](#f9-resource-sharing) | Resouce Sharing | Team members should be able to share resources within the team. | Low | Future |
 
 ### F1: Authentication
-- Users should be able to sign up using their email address, password or Google account. 
-- All the users who sign up using google account were assigned a default password, which they can change later.
-- All the users who sign up using email and password should verify their email address via a otp sent to their email.
-- Users should be able to reset their password via a "Forgot Password" feature that sends a password reset link to their registered email.
+- Users sign up using email and password should verify their email address via a otp sent to their email.
 - JWT token based authentication and authorization will be implemented for secure access to the platform.
 
 ### F2: Project Creation
@@ -25,7 +22,7 @@ In this section, we outline the key functional requirements, non-functional requ
 - Project owners should be able to edit project details after creation.
 
 ### F3: Project Discovery
-- Users should be able to search for projects based on filters like skills, title, and location tags.
+- Users should be able to see projects with skills, title, and location tags.
 - Users should be able to view detailed information about each project, including project description, requirements, and team members.
 
 ### F4: Project Joining

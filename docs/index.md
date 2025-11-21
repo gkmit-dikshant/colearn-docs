@@ -1,7 +1,7 @@
 # Colearn Documentation
-- **Target Date**: `21 Novemeber 2025`
-- **Documentation Status**: `draft`
 - **Author**: `Dikshant Sharma`
+- **Version**: `1.0.0`
+- **Last Updated**: `22 November 2025`
 # Project Overview
 
 - **Colearn** aims to provide a platform where users can find projects based on their **skill sets** and **interests**, and collaborate effectively with others.

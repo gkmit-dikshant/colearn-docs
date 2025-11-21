@@ -332,17 +332,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#loginsignup-using-google-account" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Login/Signup using google account.
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#signup-with-emailpassword" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -630,17 +619,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#loginsignup-using-google-account" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Login/Signup using google account.
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#signup-with-emailpassword" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -713,20 +691,17 @@
 
 
 <h1 id="technical-use-cases">Technical Use Cases:</h1>
-<h2 id="loginsignup-using-google-account">Login/Signup using google account.</h2>
-<ul>
-<li><strong>Actor</strong>: User</li>
-<li><strong>Precondition</strong>: User is on the login/signup page.</li>
-<li><strong>Postcondition</strong>: User is logged in and redirected to the dashboard.</li>
-<li><strong>Main Flow</strong>:<ol>
-<li>User clicks on "Login with Google" button.</li>
-<li>System redirects to Google OAuth page.</li>
-<li>User enters Google credentials and grants permissions.</li>
-<li>System verifies credentials and logs in the user.</li>
-<li>If the user is new, a new account is created in the system and an email with a default password is sent to the user's registered email.</li>
-</ol>
-</li>
-</ul>
+<!-- ## Login/Signup using google account.
+- **Actor**: User
+- **Precondition**: User is on the login/signup page.
+- **Postcondition**: User is logged in and redirected to the dashboard.
+- **Main Flow**:
+    1. User clicks on "Login with Google" button.
+    2. System redirects to Google OAuth page.
+    3. User enters Google credentials and grants permissions.
+    4. System verifies credentials and logs in the user.
+    5. If the user is new, a new account is created in the system and an email with a default password is sent to the user's registered email. -->
+
 <h2 id="signup-with-emailpassword">Signup with Email/Password</h2>
 <ul>
 <li><strong>Actor</strong>: User</li>
@@ -736,7 +711,7 @@
 <li>User selects “Sign up with Email”.</li>
 <li>Fills form with name, email, and password.</li>
 <li>System validates inputs and checks existing email.</li>
-<li>If new email, system generates 6-digit OTP.</li>
+<li>If new email, system generates an OTP.</li>
 <li>OTP sent to user’s email.</li>
 <li>User enters OTP for verification.</li>
 <li>On success, account created and verified.</li>
@@ -764,8 +739,6 @@
 <li><strong>Postcondition</strong>: User views a list of projects matching the search criteria.</li>
 <li><strong>Main Flow</strong>:<ol>
 <li>User navigates to "Discover Projects" page.</li>
-<li>User enters search criteria (skills, title, location tags).</li>
-<li>User submits the search form.</li>
 <li>System retrieves and displays a list of matching projects.</li>
 </ol>
 </li>
@@ -778,7 +751,7 @@
 <li><strong>Main Flow</strong>:<ol>
 <li>User navigates to a specific project detail page.</li>
 <li>User clicks on "Apply to Join" button.</li>
-<li>User fills in application note explaining interest and relevant skills.</li>
+<li>User fills in application note explaining interest.</li>
 <li>User submits the application.</li>
 <li>System notifies the project owner of the new application.</li>
 </ol>
