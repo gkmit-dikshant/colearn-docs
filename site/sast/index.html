@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../dfd/">
+        <link rel="prev" href="../ci_cd/">
       
       
-        <link rel="next" href="../tech_stack/">
+        <link rel="next" href="../test_plan/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Entity Relationship Diagram - CoLearn Docs</title>
+        <title>SAST Scan - CoLearn Docs</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#entity-relationship-diagram" class="md-skip">
+        <a href="#sast-scan" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Entity Relationship Diagram
+              SAST Scan
             
           </span>
         </div>
@@ -384,19 +384,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../erd/" class="md-nav__link">
         
   
   
@@ -412,7 +403,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -502,10 +492,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../sast/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    SAST Scan
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -521,6 +538,92 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trivy-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trivy Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-with-cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration with CI/CD
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remediation-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation Process
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screenshots
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -599,6 +702,80 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#overview" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Overview
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trivy-configuration" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Trivy Configuration
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integration-with-cicd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Integration with CI/CD
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remediation-process" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Remediation Process
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#screenshots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Screenshots
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conclusion" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Conclusion
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -614,9 +791,37 @@
 
 
 
-<h1 id="entity-relationship-diagram">Entity Relationship Diagram</h1>
-<p>The Entity Relationship Diagram (ERD) for the Colearn platform depicts the data model and relationships between different entities within the system. It provides a visual representation of how data is structured and interconnected in the platform.</p>
-<p><img alt="erd" src="../images/erd.png" /></p>
+<h1 id="sast-scan">SAST Scan</h1>
+<p>This document describes the Static Application Security Testing (SAST) scan process integrated into the CI/CD pipeline using Trivy.</p>
+<h2 id="overview">Overview</h2>
+<p>The SAST scan is performed on every Pull Request (PR) to the <code>staging</code> and <code>dev</code> branches. The scan checks for:
+- Secrets committed to the repository
+- Misconfigured files
+- Critical and High severity vulnerabilities
+If any issues are detected, the PR cannot be merged until they are resolved.</p>
+<h2 id="trivy-configuration">Trivy Configuration</h2>
+<p>Trivy is configured with the following settings:
+- <strong>Severity Levels</strong>: Only Critical and High severity issues are reported.
+- <strong>Ignore Policy</strong>: A predefined ignore policy is applied to filter out known false positives.
+- <strong>Scan Scope</strong>: The scan covers the entire codebase, including dependencies.</p>
+<h2 id="integration-with-cicd">Integration with CI/CD</h2>
+<p>The SAST scan is integrated into the CI/CD pipeline as follows:
+1. <strong>Trigger</strong>: The scan is triggered automatically on PR creation or updates to the <code>staging</code> and <code>dev</code> branches.
+2. <strong>Execution</strong>: Trivy runs the scan and generates a report.
+3. <strong>Reporting</strong>: If issues are found, the PR is marked as failed, and detailed reports are provided to the developers for remediation.
+4. <strong>Blocking Merges</strong>: PRs with unresolved issues cannot be merged until all critical and high severity vulnerabilities are addressed.</p>
+<h2 id="remediation-process">Remediation Process</h2>
+<p>When vulnerabilities are detected:
+1. Developers receive a notification with the scan report.
+2. They must investigate and fix the reported issues.
+3. After fixes are applied, the PR is updated, triggering a new SAST scan.
+4. Once the scan passes without critical or high severity issues, the PR can be merged.</p>
+<h2 id="screenshots">Screenshots</h2>
+<p><img alt="Trivy Scan Pipeline" src="../images/sast_pipeline.png" />
+<img alt="Trivy Scan Report Server" src="../images/sast_server.png" />
+<img alt="Trivy Scan Report Client" src="../images/sast_client.png" /></p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Integrating Trivy SAST scans into the CI/CD pipeline enhances the security posture of the codebase by ensuring that vulnerabilities are identified and addressed early in the development process.</p>
 
 
 
