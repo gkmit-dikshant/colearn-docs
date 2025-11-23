@@ -9,10 +9,10 @@
       
       
       
-        <link rel="prev" href="../tech_stack/">
+        <link rel="prev" href="../architecture/">
       
       
-        <link rel="next" href="../ci_cd/">
+        <link rel="next" href="../test_plan/">
       
       
         
@@ -23,7 +23,7 @@
     
     
       
-        <title>Deployment Architecture - CoLearn Docs</title>
+        <title>CI/CD Pipeline - CoLearn Docs</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aws-architecture" class="md-skip">
+        <a href="#cicd-pipelines" class="md-skip">
           Skip to content
         </a>
       
@@ -100,7 +100,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Deployment Architecture
+              CI/CD Pipeline
             
           </span>
         </div>
@@ -438,19 +438,10 @@
       
   
   
-    
   
   
-  
-    <li class="md-nav__item md-nav__item--active">
-      
-      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
-      
-      
-        
-      
-      
-      <a href="./" class="md-nav__link md-nav__link--active">
+    <li class="md-nav__item">
+      <a href="../architecture/" class="md-nav__link">
         
   
   
@@ -466,7 +457,6 @@
   
 
       </a>
-      
     </li>
   
 
@@ -475,10 +465,37 @@
       
   
   
+    
   
   
-    <li class="md-nav__item">
-      <a href="../ci_cd/" class="md-nav__link">
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    CI/CD Pipeline
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
         
   
   
@@ -494,6 +511,148 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#continuous-integration-ci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Continuous Integration (CI)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Continuous Integration (CI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-github-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. GitHub Repository
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-automated-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Automated Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-static-application-security-testing-sast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Static Application Security Testing (SAST)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Code Review
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-build-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Build Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continuous-deployment-cd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Continuous Deployment (CD)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Continuous Deployment (CD)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-automated-staging-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Automated Staging Deployment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-production-deployment-manual-approval" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Production Deployment (Manual Approval)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-monitoring-and-rollbacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Monitoring and Rollbacks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
     </li>
   
 
@@ -599,6 +758,136 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#continuous-integration-ci" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Continuous Integration (CI)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Continuous Integration (CI)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-github-repository" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. GitHub Repository
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-automated-testing" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Automated Testing
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-static-application-security-testing-sast" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Static Application Security Testing (SAST)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-code-review" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Code Review
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-build-verification" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Build Verification
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#continuous-deployment-cd" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Continuous Deployment (CD)
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Continuous Deployment (CD)">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-automated-staging-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Automated Staging Deployment
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-production-deployment-manual-approval" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Production Deployment (Manual Approval)
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-monitoring-and-rollbacks" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Monitoring and Rollbacks
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -614,9 +903,197 @@
 
 
 
-<h1 id="aws-architecture">AWS Architecture</h1>
-<p>The following diagram illustrates the deployment architecture utilized in the Colearn platform, highlighting the various services and their interactions.
-<img alt="" src="../images/aws_arch.png" /></p>
+<h1 id="cicd-pipelines">CI/CD Pipelines</h1>
+<p>Continuous Integration and Continuous Deployment (CI/CD) help the CoLearn project ship features faster, safer, and more reliably. This page explains all CI/CD workflows configured in GitHub Actions, including testing, SAST scans, and automated deployment to the staging environment.</p>
+<hr />
+<h2 id="continuous-integration-ci">Continuous Integration (CI)</h2>
+<p>CI ensures that every change pushed to the repository is tested, scanned, and validated before reaching production.</p>
+<h3 id="1-github-repository">1. GitHub Repository</h3>
+<p>All source code is maintained in a GitHub repository. Developers create feature branches and push changes through Pull Requests (PRs).</p>
+<h3 id="2-automated-testing">2. Automated Testing</h3>
+<p>Whenever a PR is created or code is pushed to <code>dev</code>, <code>staging</code>, or <code>main</code>, the test suite runs automatically.</p>
+<p>The CI tests include:</p>
+<ul>
+<li>Unit Tests  </li>
+<li>Jest-based test suites  </li>
+</ul>
+<p>This ensures new changes do not break existing functionality.</p>
+<h3 id="3-static-application-security-testing-sast">3. Static Application Security Testing (SAST)</h3>
+<p>PRs to <code>staging</code> and <code>dev</code> must pass the <strong>Trivy SAST scan</strong>, which checks for:</p>
+<ul>
+<li>Secrets committed to the repository  </li>
+<li>Misconfigured files  </li>
+<li>Critical and High severity vulnerabilities  </li>
+</ul>
+<p>If vulnerabilities are detected, the PR cannot be merged.</p>
+<h3 id="4-code-review">4. Code Review</h3>
+<p>Every Pull Request requires review and approval from mentor.</p>
+<p>Review checks include:</p>
+<ul>
+<li>Code quality  </li>
+<li>Maintainability  </li>
+<li>Security concerns  </li>
+<li>Consistency with project standards  </li>
+</ul>
+<h3 id="5-build-verification">5. Build Verification</h3>
+<p>After all tests and SAST checks pass, the code is considered valid and ready for deployment.</p>
+<hr />
+<h2 id="continuous-deployment-cd">Continuous Deployment (CD)</h2>
+<p>CD automates deployment to the staging environment using GitHub Actions, SSH, and PM2 on AWS EC2.</p>
+<h3 id="1-automated-staging-deployment">1. Automated Staging Deployment</h3>
+<p>Whenever code is pushed to the <code>staging</code> branch:</p>
+<ol>
+<li>Trivy SAST scan executes.  </li>
+<li>If successful, the deployment pipeline connects to the EC2 instance using SSH.  </li>
+<li>The server pulls the latest staging code, installs dependencies, and restarts PM2.</li>
+</ol>
+<p>This ensures consistent and reliable deployments.</p>
+<h3 id="2-production-deployment-manual-approval">2. Production Deployment (Manual Approval)</h3>
+<p>Production deployments follow a controlled process:</p>
+<ul>
+<li>Code merges into the <code>main</code> branch.</li>
+<li>A human reviews all updates.</li>
+<li>Deployment to production is triggered manually.</li>
+</ul>
+<p>This avoids accidental or unverified production releases.</p>
+<h3 id="3-monitoring-and-rollbacks">3. Monitoring and Rollbacks</h3>
+<p>After each deployment:</p>
+<ul>
+<li>PM2 monitors logs and application health.</li>
+</ul>
+<hr />
+<h1 id="github-actions-pipelines">GitHub Actions Pipelines</h1>
+<p>Below are the exact CI/CD pipelines used in the CoLearn project.</p>
+<hr />
+<h2 id="1-staging-deployment-pipeline">1. Staging Deployment Pipeline</h2>
+<pre><code class="language-yaml">name: Deploy to EC2 (Staging)
+
+on:
+  push:
+    branches:
+      - staging
+
+jobs:
+  trivy-sast:
+    name: Trivy SAST Scan Before Deploy
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Trivy SAST
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: &quot;fs&quot;
+          path: &quot;.&quot;
+          scanners: &quot;secret,config&quot;
+          exit-code: 1
+          severity: &quot;CRITICAL,HIGH&quot;
+
+  deploy:
+    name: Deploy to EC2
+    runs-on: ubuntu-latest
+    needs: trivy-sast
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Setup SSH
+        uses: webfactory/ssh-agent@v0.9.0
+        with:
+          ssh-private-key: ${{ secrets.EC2_SSH_KEY }}
+
+      - name: Deploy to EC2
+        run: |
+          ssh -o StrictHostKeyChecking=no ${{ secrets.EC2_USER }}@${{ secrets.EC2_HOST }} &lt;&lt; 'EOF'
+
+            echo &quot;---- Pulling latest changes ----&quot;
+            cd /server/colearn-backend-api
+            git fetch --all
+            git reset --hard origin/staging
+
+            echo &quot;---- Installing dependencies ----&quot;
+            npm install --production
+
+            echo &quot;---- Restarting PM2 ----&quot;
+            pm2 restart all
+
+            echo &quot;---- Deployment Completed Successfully ----&quot;
+          EOF
+</code></pre>
+<h2 id="2-test-pipeline">2. Test Pipeline</h2>
+<pre><code class="language-yml">name: Run Tests on Pull Request
+
+on:
+  pull_request:
+    branches:
+      - staging
+      - main
+      - dev
+  push:
+    branches:
+      - staging
+      - dev
+      - main
+
+jobs:
+  test:
+    name: Run Unit &amp; Integration Tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: &quot;18&quot;
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run tests
+        run: npm test
+
+      - name: Upload test results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-results
+          path: test-results/
+
+</code></pre>
+<h2 id="3-trivy-sast-scan-pipeline">3. Trivy SAST Scan Pipeline</h2>
+<pre><code class="language-yaml">name: SAST Scan
+
+on:
+  pull_request:
+    branches:
+      - staging
+      - dev
+
+jobs:
+  trivy-sast:
+    name: Trivy SAST Scan
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Run Trivy SAST
+        uses: aquasecurity/trivy-action@master
+        with:
+          scan-type: &quot;fs&quot;
+          path: &quot;.&quot;
+          scanners: &quot;secret,config&quot;
+          exit-code: 1
+          severity: &quot;CRITICAL,HIGH&quot;
+
+</code></pre>
 
 
 

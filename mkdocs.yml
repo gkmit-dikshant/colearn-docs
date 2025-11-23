@@ -9,6 +9,9 @@ nav:
   - Entity Relationship Diagram: erd.md
   - Technologies: tech_stack.md
   - Deployment Architecture: architecture.md
+  - CI/CD Pipeline: ci_cd.md
+  - SAST Scan: sast.md
+  - DAST Scan: dast.md
   - Test Plan: test_plan.md
 theme: material
 # mkdocs serve --dev-addr=0.0.0.0:80
